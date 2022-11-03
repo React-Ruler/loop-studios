@@ -63,7 +63,6 @@ body {
   width: 520px !important;
   display: flex !important;
 
-
   h1 {
     font-size: 32px !important;
     font-weight: 300 !important;
@@ -129,12 +128,29 @@ p.tutorial-link img {
   column-gap: 2rem;
 }
 
-.footer a {
-  color: #fff !important;
-}
+.footer {
+  background-color: $dark-black !important;
 
-.footer a:hover {
-  color: #fff;
+  p.copyright {
+    color: $light-01 !important;
+  }
+
+  .links-footer {
+    font-family: $family-sans-serif !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+    font-weight: 300 !important;
+    color: $light-01 !important;
+
+    a.navbar-item {
+      color: $light-01 !important;
+    }
+  }
+
+  a.navbar-item {
+    background-color: transparent !important;
+    color: transparent !important;
+  }
 }
 
 // Import only what you need from Bulma
